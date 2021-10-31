@@ -1,0 +1,278 @@
+
+
+
+
+
+    
+    td{
+        position: relative;
+    }
+    
+    /*Row 1*/
+    
+    
+    /*TODO: fix button styling , text font size*/
+    /*How to adjust content on screen change size*/
+    
+    
+    /*center img */
+    .cntr_img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height:inherit;
+        width: 50%;
+      
+    }
+    
+    .content{
+        position:absolute;
+        top:10em;
+        left:34em;
+        width:max-content;
+    }
+    
+    .content>h1{
+    
+        color: white;
+    }
+    
+    .content>p{
+        color:white;
+        text-align: center;
+        margin-top: -14px;
+    }
+    /*border-style: 1px solid white;*/
+    #top_button{
+       
+        border-style: 1px solid;
+        background-color: transparent;
+        height: 3em;
+        color: white;
+        margin-left: 3em;
+        margin-top: 15px;
+    }
+    /*Row 1*/
+
+    /*Row 2*/
+
+    #row2>#text1{
+        padding-left: 18em;
+        
+
+    }
+
+    #row2>#text2{
+       margin-top: 5em;
+        
+
+    }
+
+    #row2>h5{
+        color: gray;
+        
+    }
+
+
+    .beertext{
+
+        margin-left: 20%;
+        margin-right: 30%;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    .beertext>h2{
+
+        font-weight:bold;
+        font-weight: 500;
+        font-size: 3em;
+        
+    }
+    /*block with beer cards*/
+    #images-block2{
+        margin-top: 5em;
+    }
+    #images-block2>.block2{ /*get blocks on one line*/
+        display:inline-block;
+        position:relative;
+        left:14em;
+    }
+    
+    #images-block2>.block2>img{
+
+        width:253px;
+        height:190px;
+
+
+    }
+
+    .block2>h6{ /*price*/
+        color: gray;
+    }
+
+
+    .block2>button{
+        border-radius: 20px;
+        border:1px solid black;
+        background-color: transparent;
+        transform: translateX(-5%);
+        width:253px;
+        height:52px;
+
+    }
+    
+    
+    
+    /*Row 2*/
+    /*Row 2*/
+
+
+
+
+
+    /*Row 4*/
+
+
+    .center_row{
+
+        margin-left: 10em;
+        margin-right: 15em;
+    }
+
+    #img4_1{
+        
+        float: left;
+        width:405px;
+        
+    }
+
+    #img4_2{
+        
+        float: right;
+        width:405px;
+        
+    }
+    /*margin-left: 5em;
+        margin-right: 13em;*/
+
+    #side1{
+
+        
+        position:relative;
+        top:15em;
+        left:3em;
+
+    }
+
+    
+
+   #side2{
+        
+       clear:left;
+       position:relative;
+       top:25em;
+   }
+
+
+    /*Row 4*/
+
+
+    /*Row 5*/
+    /*TODO : style text,implement image 2 on end*/
+   #img5_1{
+       float:left;
+       margin-left: 13em;
+       
+       
+   }
+
+   /*Larger img*/
+   #img5_2{
+    float:right;
+    margin-right: 18em;
+    
+    
+}
+
+/*do not want to float in same line with img5_1*/
+#img5_3{
+    clear:left;
+    float:left;
+    margin-left: 13em;
+    margin-top: 2em;
+    
+}
+
+
+
+#img5_4{
+
+    padding-top: 2em;
+    padding-left: 15%;
+}
+
+  
+
+
+    /*Row 5*/
+
+
+
+    /*footer*/
+    /*TODO implement right side text and center content */
+    #footer_content>p,b{
+
+        font-size: xx-small;
+
+    }
+
+
+    #Unsub{
+        background-color: gray;
+        margin-top: 2em;
+
+    }
+
+    #Unsub>p{
+        color: white;
+        font-size: xx-small;
+        text-align: center;
+
+
+    }
+
+    #footer_img{
+        float:right;
+
+
+    }
+
+
+    .social_media{
+        float:left;
+        margin-left: 1em;
+        
+
+
+    }
+
+    #f{
+
+        width:11px;
+        height:22px;
+    }
+    #i,#t{
+
+        width:22px;
+        height:22px;
+    }
+    
+
+
+
+    /*footer*/
+
+
+
+
