@@ -2,40 +2,49 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <!--Avoiding strange apple formatting-->
 	<meta name="x-apple-disable-message-reformatting">
 	<title>AMD Mail Template</title>
 
-    <!--Script ensures that png images display on right size on Microsoft Outlook-->
-	<!--[if mso]>
-	<noscript>
-		<xml>
-            <o:OfficeDocumentSettings>
-				<o:PixelsPerInch>96</o:PixelsPerInch>
-			</o:OfficeDocumentSettings>
-		</xml>
-	</noscript>
-	<![endif]-->
-    <link rel="stylesheet" type="text/css" href="Mail_Template.css" media="all">
+   
+    <link rel="stylesheet" type="text/css" href="Mail_Template.css" >
 	<style>
 		table, td, div, h1, p {font-family: Arial, sans-serif;}
 		table, td {border:2px solid #000000 !important;}
 	</style>
+    <script>
+
+        function getScreenSize(){
+
+
+            console.log(window.innerWidth+"X"+window.innerHeight);
+        }
+    </script>
 </head>
 
 <body style="margin:0;padding:0;">
     <table role="presentation" style="width:100%;border-collapse:collapse;border:0;border-spacing:0;background:#ffffff;">
 		<tr>
-			<td  style="padding:0;background-color: gray;">
+			<td id="table-row-1" class = "table-row" style="padding:0;">
+                
+                <div id="img-block-row-1" class="img-block">
+                    <div id = "content-row-1" class = "content-row">
+                        <header>The Bloom</header>
+                        <div id="sub-content-row-1">
+                            <p>fine gardens</p>
+                            <button id="btn-row-1" onclick="getScreenSize()" id="top_button" type="button">Find out More</button>
 
-                <div class = "content">
-                    <h1>The Bloom</h1>
-                    <p>fine gardens</p>
-                    <button id="top_button" type="button">Find out More</button>
+                        </div>
+                       
+                    </div>
+
+                    <img id="img-row-1" class = "img-row" src="Section1/top_img.png" />
+                   
                 </div>
-                <img id="top_img" class = "cntr_img" src="top_img.png" />
+                
+                <!--<img id="top_img" class = "cntr_img" src="top_img.png" />-->
 				
 			</td>
 		</tr>
@@ -43,89 +52,121 @@
         <tr>
 			<td  style="padding:0;background-color: white;">
                 
-                <div id="row2">
-                
-                    <div id = "text1">
-    
-                        <h2>WE DO</h2>
-                        
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p> 
-                           <p>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p> 
-                           <p>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
-                        
-                    </div>
-    
-                    <div id = "text2" class="beertext">
-    
-                        <h2>And a Beer</h2>
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <p>consecetur adipisicing elit,sed do</p>
-                    </div>
+                <div id="flex-container-row-2">
+                    <div class="flex-container-cols-row-2">
 
-                    <h5>READ ALL ARTICLE</h5>
-    
-                    <div id = "images-block2">
-                        <div class = "block2">
-                            <img  src="Section2/t5_image4/t5_image4.png" />
 
-                            <div class ="nested-textblock2">
-                                <h4>WE DO</h4>
+                        <div id = "flex-col-2-row-2" class="beertext flex-col-row-2">
+    
+                            <div id = "flex-col-1-row-2" class="flex-col-row-2">
+    
+                                <h2>WE DO</h2>
                                 
-                                    <p>Lorem ipsum dolor sit </p>
-                                    <p>amet, consectetur  </p>
-                                        
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p> 
+                                   <p>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p> 
+                                   <p>exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
                                 
-
-
                             </div>
-
-                            <h6>3.99$</h6>
-                            <button>BUY</button>
-
                         </div>
 
-                        <div class = "block2">
-                            <img  src="Section2/t5_image5/t5_image5.png" />
+                    </div>
+                    <div class="flex-container-row-2-cols">
 
-                            <div class ="nested-textblock2">
-                                <h4>WE DO</h4>
-                                
-                                    <p>Lorem ipsum dolor sit </p>
-                                    <p>amet, consectetur  </p>
+                        <div id = "flex-col-2-row-2" class="beertext flex-col-row-2">
+    
+                            <h2>And a Beer</h2>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <p>consecetur adipisicing elit,sed do</p>
+                        </div>
 
+                    </div>
+                    <div  class="flex-container-row-2-cols">
+
+
+                        <h5>READ ALL ARTICLE</h5>
+    
+                        <div class ="flex-col-row-2" id = "flex-col-3-row-2">
+                            <div class="flex-sub-col">
+
+                                <div class = "nested-sub-col">
+                                    <img  src="Section2/t5_image4/t5_image4.png" />
+        
+                                    <div class ="nested-textblock2">
+                                        <h4>WE DO</h4>
                                         
-                                
+                                            <p>Lorem ipsum dolor sit </p>
+                                            <p>amet, consectetur  </p>
+                                                
+                                        
+        
+        
+                                    </div>
+        
+                                    <h6>3.99$</h6>
+                                    <button>BUY</button>
+        
+                                </div>
+                            </div>
+                            <div class="flex-sub-col">
 
+                                <div class = "nested-sub-col">
+                                    <img  src="Section2/t5_image5/t5_image5.png" />
+        
+                                    <div class ="nested-textblock2">
+                                        <h4>WE DO</h4>
+                                        
+                                            <p>Lorem ipsum dolor sit </p>
+                                            <p>amet, consectetur  </p>
+        
+                                                
+                                        
+        
+        
+                                    </div> 
+                                    <h6>3.99$</h6>
+                                    <button>BUY</button>
+        
+        
+                                    
+                                </div>
+                            </div>
+                            <div class="flex-sub-col">
 
-                            </div> 
-                            <h6>3.99$</h6>
-                            <button>BUY</button>
-
-
+                                <div class = "nested-sub-col">
+                                    <img src="Section2/t5_image6/t5_image6.png" />
+        
+                                    <div class ="nested-textblock2">
+                                        <h4>WE DO</h4>
+                                        
+                                            <p>Lorem ipsum dolor sit </p>
+                                            <p>amet, consectetur  </p>
+                                                
+                                        
+        
+        
+                                    </div>
+                                    <h6>3.99$</h6>
+                                    <button>BUY</button>
+                                    
+                                </div>
+                            </div>
+                            
+    
+                            
+    
+                            
+                            
+                            
                             
                         </div>
 
-                        <div class = "block2">
-                            <img src="Section2/t5_image6/t5_image6.png" />
 
-                            <div class ="nested-textblock2">
-                                <h4>WE DO</h4>
-                                
-                                    <p>Lorem ipsum dolor sit </p>
-                                    <p>amet, consectetur  </p>
-                                        
-                                
-
-
-                            </div>
-                            <h6>3.99$</h6>
-                            <button>BUY</button>
-                            
-                        </div>
-                        
-                        
-                        
                     </div>
+                    
+    
+                   
+
+                   
                 </div>  
 			</td>
 		</tr>
